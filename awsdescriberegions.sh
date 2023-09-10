@@ -30,3 +30,7 @@ for element in ${regval}; do
 done
 
 echo "======================================================================================================================================"
+
+#
+#x=$(aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" --region us-east-1 --query 'Reservations[*].Instances[*].InstanceId')
+#echo $x | awk -F ' ' '{print $3}' | sed 's/"//g'
